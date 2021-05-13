@@ -1,0 +1,7 @@
+.coinItem {
+    width: 20px;
+    height: 20px;
+    background: grey;
+    color: red;
+    border-radius: 50%;
+}
