@@ -1,4 +1,4 @@
-console.log('script loaded');
+
 
 // 1. when the form is submitted add the number of coins to the page.
 // 2. each with text from the "which coin"
@@ -9,19 +9,19 @@ console.log('script loaded');
 
 // main form variable
 const mainForm = document.querySelector('.main-form');
-console.log(mainForm);
+
 
 // coin items section
 const coinItemsSection = document.querySelector('.coins-section');
-console.log(coinItemsSection);
+
 
 // number of coins
 const howManyInput = document.querySelector('#how-many-input');
-console.log(howManyInput);
+
 
 // type of coins
 const coinType = document.querySelector('#select-which-coin');
-console.log(coinType)
+
 
 
 
@@ -53,7 +53,7 @@ mainForm.addEventListener('submit', (event) => {
             const pennyDiv = document.createElement('div');
             console.log(pennyDiv);
             // add a class to the classList of an element
-            pennyDiv.classList.add('coinItem');;
+            pennyDiv.classList.add('coin-item');;
             // update the innerText of an element
             pennyDiv.innerText = 'Penny';
             // append the button inside of the buttonWrapper div
@@ -63,20 +63,20 @@ mainForm.addEventListener('submit', (event) => {
             console.log('This is a Nickel');
             const nickelDiv = document.createElement('div');
             console.log(nickelDiv);
-            nickelDiv.classList.add('coinItem');;
+            nickelDiv.classList.add('coin-item');;
             nickelDiv.innerText = 'Nickel';
             coinItemsSection.append(nickelDiv);
             currentCoins++;
         } else if (coinOption === 'Dime'){
             const dimeDiv = document.createElement('div');
-            dimeDiv.classList.add('coinItem');;
+            dimeDiv.classList.add('coin-item');;
             dimeDiv.innerText = 'Dime';
             coinItemsSection.append(dimeDiv);
             currentCoins++;
         } else if (coinOption === 'Quarter'){
             // else if is not needed since it is all that is left.
             const quarterDiv = document.createElement('div');
-            quarterDiv.classList.add('coinItem');;
+            quarterDiv.classList.add('coin-item');;
             quarterDiv.innerText = 'Quarter';
             coinItemsSection.append(quarterDiv);
             currentCoins++;
